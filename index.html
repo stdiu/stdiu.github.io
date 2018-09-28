@@ -182,7 +182,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/28/测试使用/">测试使用</a>
+      <a class="article-title" href="/2018/09/28/测试使用/">嵌入式处理器分类</a>
     </h1>
   
 
@@ -195,7 +195,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>嵌入式系统的核心部件是各种类型的嵌入式处理器，目前据不完全统计，全世界嵌入式处理器的品种总量已经超过1000多种，流行体系结构有30几个系列，其中8051体系的占有多半。生产8051单片机的半导体厂家有20多个，共350多种衍生产品，仅Philips就有近100种。现在几乎每个半导体制造商都生产嵌入式处理器，越来越多的公司有自己的处理器设计部门。嵌入式处理器的寻址空间一般从64kB到16MB，处理速度从0.1 MIPS到2000 MIPS，常用封装从8个引脚到144个引脚。根据其现状，嵌入式计算机可以分成下面几类。 </p>
+<p>嵌入式微处理器(Embedded Microprocessor Unit, EMPU) </p>
+<p>嵌入式微处理器的基础是通用计算机中的CPU。在应用中，将微处理器装配在专门设计的电路板上，只保留和嵌入式应用有关的母板功能，这样可以大幅度减小系统体积和功耗。为了满足嵌入式应用的特殊要求，嵌入式微处理器虽然在功能上和标准微处理器基本是一样的，但在工作温度、抗电磁干扰、可靠性等方面一般都做了各种增强。 </p>
+<p>和工业控制计算机相比，嵌入式微处理器具有体积小、重量轻、成本低、可靠性高的优点，但是在电路板上必须包括ROM、RAM、总线接口、各种外设等器件，从而降低了系统的可靠性，技术保密性也较差。嵌入式微处理器及其存储器、总线、外设等安装在一块电路板上，称为单板计算机。如STD-BUS、PC104等。近年来，德国、日本的一些公司又开发出了类似“火柴盒”式名片大小的嵌入式计算机系列OEM产品。 </p>
+<p>嵌入式处理器目前主要有Am186/88、386EX、SC-400、Power PC、68000、MIPS、ARM系列等。 </p>
+<p>嵌入式微控制器(Microcontroller Unit, MCU) </p>
+<p>嵌入式微控制器又称单片机，顾名思义，就是将整个计算机系统集成到一块芯片中。嵌入式微控制器一般以某一种微处理器内核为核心，芯片内部集成ROM/EPROM、RAM、总线、总线逻辑、定时/计数器、WatchDog、I/O、串行口、脉宽调制输出、A/D、D/A、Flash RAM、EEPROM等各种必要功能和外设。为适应不同的应用需求，一般一个系列的单片机具有多种衍生产品，每种衍生产品的处理器内核都是一样的，不同的是存储器和外设的配置及封装。这样可以使单片机最大限度地和应用需求相匹配，功能不多不少，从而减少功耗和成本。 </p>
+<p>和嵌入式微处理器相比，微控制器的最大特点是单片化，体积大大减小，从而使功耗和成本下降、可靠性提高。微控制器是目前嵌入式系统工业的主流。微控制器的片上外设资源一般比较丰富，适合于控制，因此称微控制器。 </p>
+<p>嵌入式微控制器目前的品种和数量最多，比较有代表性的通用系列包括8051、P51XA、MCS-251、MCS-96/196/296、C166/167、MC68HC<chsdate w:st="on" year="2005" month="11" day="12" islunardate="False" isrocdate="False">05/11/12</chsdate>/16、68300等。另外还有许多半通用系列如：支持USB接口的MCU 8XC930/931、C540、C541；支持I2C、CAN-Bus、LCD及众多专用MCU和兼容系列。目前MCU占嵌入式系统约70％的市场份额。 </p>
+<p>特别值得注意的是近年来提供X86微处理器的著名厂商AMD公司，将Am186CC/CH/CU等嵌入式处理器称之为Microcontroller, MOTOROLA公司把以Power PC为基础的PPC505和PPC555亦列入单片机行列。TI公司亦将其TMS320C2XXX系列DSP做为MCU进行推广。 </p>
+<p>嵌入式DSP处理器(Embedded Digital Signal Processor, EDSP) </p>
+<p>DSP处理器对系统结构和指令进行了特殊设计，使其适合于执行DSP算法，编译效率较高，指令执行速度也较高。在数字滤波、FFT、谱分析等方面DSP算法正在大量进入嵌入式领域，DSP应用正从在通用单片机中以普通指令实现DSP功能，过渡到采用嵌入式DSP处理器。嵌入式DSP处理器有两个发展来源，一是DSP处理器经过单片化、EMC改造、增加片上外设成为嵌入式DSP处理器，TI的TMS<chmetcnv w:st="on" unitname="C" sourcevalue="320" hasspace="False" negative="False" numbertype="1" tcsc="0">320C</chmetcnv>2000 /C5000等属于此范畴；二是在通用单片机或SOC中增加DSP协处理器，例如Intel的MCS-296和Infineon(Siemens)的TriCore。 </p>
+<p>推动嵌入式DSP处理器发展的另一个因素是嵌入式系统的智能化，例如各种带有智能逻辑的消费类产品，生物信息识别终端，带有加解密算法的键盘， ADSL 接入、实时语音压解系统，虚拟现实显示等。这类智能化算法一般都是运算量较大，特别是向量运算、指针线性寻址等较多，而这些正是DSP 处理器的长处所在。 </p>
+<p>嵌入式DSP处理器比较有代表性的产品是Texas Instruments的TMS320系列和Motorola的DSP56000 系列。 TMS320系列处理器包括用于控制的 C2000系列，移动通信的C5000系列，以及性能更高的C6000和C8000系列。DSP56000目前已经发展成为DSP56000，DSP56100，DSP56200和DSP56300等几个不同系列的处理器。另外PHILIPS公司今年也推出了基于可重置嵌入式DSP结构低成本、低功耗技术上制造的R. E. A. L DSP处理器，特点是具备双Harvard结构和双乘/累加单元，应用目标是大批量消费类产品。 </p>
+<p>嵌入式片上系统(System On Chip) </p>
+<p>随着EDI的推广和VLSI设计的普及化，及半导体工艺的迅速发展，在一个硅片上实现一个更为复杂的系统的时代已来临，这就是System On Chip(SOC)。各种通用处理器内核将作为SOC设计公司的标准库，和许多其它嵌入式系统外设一样，成为 VLSI设计中一种标准的器件，用标准的 VHDL等语言描述，存储在器件库中。用户只需定义出其整个应用系统，仿真通过后就可以将设计图交给半导体工厂制作样品。这样除个别无法集成的器件以外，整个嵌入式系统大部分均可集成到一块或几块芯片中去，应用系统电路板将变得很简洁，对于减小体积和功耗、提高可靠性非常有利。 </p>
+<p>SOC可以分为通用和专用两类。通用系列包括Infineon的TriCore，Motorola的M-Core，某些ARM系列器件，Echelon和Motorola联合研制的Neuron芯片等。专用SOC一般专用于某个或某类系统中，不为一般用户所知。一个有代表性的产品是Philips的Smart XA，它将XA单片机内核和支持超过2048 位复杂RSA算法的CCU单元制作在一块硅片上，形成一个可加载JAVA或C语言的专用的SOC，可用于公众互联网如Internet安全方面。</p>
+<hr>
+<p>本文来自 iteye_13868 的CSDN 博客 ，全文地址请点击：<a href="https://blog.csdn.net/iteye_13868/article/details/81581326?utm_source=copy" target="_blank" rel="noopener">https://blog.csdn.net/iteye_13868/article/details/81581326?utm_source=copy</a> </p>
+
       
 
       
@@ -220,7 +239,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
+        			<a href="/categories/嵌入式//" class="article-tag-list-link color4">嵌入式</a>
         		</li>
       		
 		</ul>
