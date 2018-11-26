@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://stdiu.github.io">
-  <title>OpenCV中Mat详解 | 颜同学的博客</title>
+  <title>颜同学的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原文地址：http://www.opencvchina.com/thread-1039-1-1.html目标 我们有多种方法可以获得从现实世界的数字图像：数码相机、扫描仪、计算机体层摄影或磁共振成像就是其中的几种。在每种情况下我们（人类）看到了什么是图像。但是，转换图像到我们的数字设备时我们的记录是图像的每个点的数值。 OpenCV参考手册之Mat类详解 例如在上图中你可以看到车的镜子只是一个包含">
-<meta name="keywords" content="OpenCV">
+  <meta name="description" content="OpenCV Mat类详解和用法标签（空格分隔）： 图像处理  ###原文地址 ###目标  我们有多种方法可以获得从现实世界的数字图像：数码相机、扫描仪、计算机体层摄影或磁共振成像就是其中的几种。在每种情况下我们（人类）看到了什么是图像。但是，转换图像到我们的数字设备时我们的记录是图像的每个点的数值。 ###OpenCV参考手册之Mat类详解   例如在上图中你可以看到车的镜子只是一个包含所有强">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OpenCV中Mat详解">
+<meta property="og:title" content="颜同学的博客">
 <meta property="og:url" content="http://stdiu.github.io/2018/11/26/OpenCV中Mat详解/index.html">
 <meta property="og:site_name" content="颜同学的博客">
-<meta property="og:description" content="原文地址：http://www.opencvchina.com/thread-1039-1-1.html目标 我们有多种方法可以获得从现实世界的数字图像：数码相机、扫描仪、计算机体层摄影或磁共振成像就是其中的几种。在每种情况下我们（人类）看到了什么是图像。但是，转换图像到我们的数字设备时我们的记录是图像的每个点的数值。 OpenCV参考手册之Mat类详解 例如在上图中你可以看到车的镜子只是一个包含">
+<meta property="og:description" content="OpenCV Mat类详解和用法标签（空格分隔）： 图像处理  ###原文地址 ###目标  我们有多种方法可以获得从现实世界的数字图像：数码相机、扫描仪、计算机体层摄影或磁共振成像就是其中的几种。在每种情况下我们（人类）看到了什么是图像。但是，转换图像到我们的数字设备时我们的记录是图像的每个点的数值。 ###OpenCV参考手册之Mat类详解   例如在上图中你可以看到车的镜子只是一个包含所有强">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-26T02:30:26.469Z">
+<meta property="og:image" content="http://hi.csdn.net/attachment/201203/4/0_1330856598Rylz.gif">
+<meta property="og:updated_time" content="2018-11-26T03:20:49.525Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OpenCV中Mat详解">
-<meta name="twitter:description" content="原文地址：http://www.opencvchina.com/thread-1039-1-1.html目标 我们有多种方法可以获得从现实世界的数字图像：数码相机、扫描仪、计算机体层摄影或磁共振成像就是其中的几种。在每种情况下我们（人类）看到了什么是图像。但是，转换图像到我们的数字设备时我们的记录是图像的每个点的数值。 OpenCV参考手册之Mat类详解 例如在上图中你可以看到车的镜子只是一个包含">
+<meta name="twitter:title" content="颜同学的博客">
+<meta name="twitter:description" content="OpenCV Mat类详解和用法标签（空格分隔）： 图像处理  ###原文地址 ###目标  我们有多种方法可以获得从现实世界的数字图像：数码相机、扫描仪、计算机体层摄影或磁共振成像就是其中的几种。在每种情况下我们（人类）看到了什么是图像。但是，转换图像到我们的数字设备时我们的记录是图像的每个点的数值。 ###OpenCV参考手册之Mat类详解   例如在上图中你可以看到车的镜子只是一个包含所有强">
+<meta name="twitter:image" content="http://hi.csdn.net/attachment/201203/4/0_1330856598Rylz.gif">
   
     <link rel="alternative" href="/atom.xml" title="颜同学的博客" type="application/atom+xml">
   
@@ -178,34 +179,20 @@
             <article id="post-OpenCV中Mat详解" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      OpenCV中Mat详解
-    </h1>
-  
-
-        
-        <a href="/2018/11/26/OpenCV中Mat详解/" class="archive-article-date">
-  	<time datetime="2018-11-26T02:23:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-26</time>
-</a>
-        
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>原文地址：<a href="http://www.opencvchina.com/thread-1039-1-1.html" target="_blank" rel="noopener">http://www.opencvchina.com/thread-1039-1-1.html</a><br>目标</p>
-<p>我们有多种方法可以获得从现实世界的数字图像：数码相机、扫描仪、计算机体层摄影或磁共振成像就是其中的几种。在每种情况下我们（人类）看到了什么是图像。但是，转换图像到我们的数字设备时我们的记录是图像的每个点的数值。</p>
-<p>OpenCV参考手册之Mat类详解</p>
-<p>例如在上图中你可以看到车的镜子只是一个包含所有强度值的像素点矩阵。现在，我们如何获取和存储像素值可能根据最适合我们的需要而变化，最终可能减少计算机世界内的所有图像数值矩阵和一些其他的信息的描述基质本身。OpenCV 是一个计算机视觉库，其主要的工作是处理和操作，进一步了解这些信息。因此，你需要学习和开始熟悉它的第一件事是理解OpenCV 是如何存储和处理图像。<br><a id="more"></a><br>Mat</p>
-<p>OpenCV 自 2001 年出现以来。在那些日子里库是围绕C接口构建的。在那些日子里，他们使用名为IplImage C 的结构在内存中存储图像。这是您将在大多数较旧的教程和教材中看到的那个。使用这个结构的问题是将 C 语言的所有负面效果都摆到了桌面上。最大的问题是手动管理。它是建立在用户来负责处理内存分配和解除分配的假设之上的。当程序规模较小时，这是没有问题的，一旦代码基开始变得越来越大它将会越来越挣扎着处理所有这一切而不是着眼于实际解决自己的开发目标。</p>
-<p>幸运的是 c + + 出现了，并引入了类的概念，使得为用户开辟另一条路成为可能：</p>
-<p>自动内存管理 （或多或少）。好消息是，c + +，如果完全兼容 C 所以进行更改时没有兼容性问题产生。因此， OpenCV其2.0 版本引入一个新的c + + 接口，通过利用这些优点将为你的工作提供新的方法。某种程度上，在其中您不需要拨弄内存管理让你的代码简洁 （写得更少，实现的更多）。C + + 接口的唯一主要缺点在于，目前许多嵌入式的开发系统支持仅 C.因此，除非您的目标是这一平台，否则就没有理由再使用旧的方法（除非你是个受虐狂程序员和喜欢自讨苦吃）。</p>
+        <h1 id="OpenCV-Mat类详解和用法"><a href="#OpenCV-Mat类详解和用法" class="headerlink" title="OpenCV Mat类详解和用法"></a>OpenCV Mat类详解和用法</h1><p>标签（空格分隔）： 图像处理</p>
+<hr>
+<p>###<a href="http://www.opencvchina.com/thread-1039-1-1.html" target="_blank" rel="noopener">原文地址</a></p>
+<p>###目标<br>  我们有多种方法可以获得从现实世界的数字图像：数码相机、扫描仪、计算机体层摄影或磁共振成像就是其中的几种。在每种情况下我们（人类）看到了什么是图像。但是，转换图像到我们的数字设备时我们的记录是图像的每个点的数值。<br><img src="http://hi.csdn.net/attachment/201203/4/0_1330856598Rylz.gif" alt="在网上复制地址过来的"></p>
+<p>###OpenCV参考手册之Mat类详解</p>
+<p>  例如在上图中你可以看到车的镜子只是一个包含所有强度值的像素点矩阵。现在，我们如何获取和存储像素值可能根据最适合我们的需要而变化，最终可能减少计算机世界内的所有图像数值矩阵和一些其他的信息的描述基质本身。OpenCV 是一个计算机视觉库，其主要的工作是处理和操作，进一步了解这些信息。因此，你需要学习和开始熟悉它的第一件事是理解OpenCV 是如何存储和处理图像。</p>
+<p>###Mat</p>
+<p>OpenCV 自 2001 年出现以来。在那些日子里库是围绕C接口构建的。在那些日子里，他们使用名为IplImage C 的结构在内存中存储图像。这是您将在大多数较旧的教程和教材中看到的那个。使用这个结构的问题是将C语言的所有负面效果都摆到了桌面上。最大的问题是手动管理。它是建立在用户来负责处理内存分配和解除分配的假设之上的。当程序规模较小时，这是没有问题的，一旦代码基开始变得越来越大它将会越来越挣扎着处理所有这一切而不是着眼于实际解决自己的开发目标。<br>幸运的是 c + + 出现了，并引入了类的概念，使得为用户开辟另一条路成为可能：自动内存管理 （或多或少）。好消息是c + +完全兼容 C,所以进行更改时没有兼容性问题产生。因此， OpenCV其2.0 版本引入一个新的c + + 接口，通过利用这些优点将为你的工作提供新的方法。某种程度上，在其中您不需要拨弄内存管理让你的代码简洁 （写得更少，实现的更多）。C + + 接口的唯一主要缺点在于，目前许多嵌入式的开发系统支持仅 C.因此，除非您的目标是这一平台，否则就没有理由再使用旧的方法（除非你是个受虐狂程序员和喜欢自讨苦吃）。</p>
 <p>你需要知道的关于Mat的第一件事是你不再需要手动分配其大小并且当你不需要它的时候你不再需要手动释放它。虽然这样做仍然是可能的，大多数 OpenCV 函数将手动分配其输出数据。还有一个额外的好处是如果传递一个已存在Mat对象，它已经为矩阵分配所需的空间，这段空间将被重用。也就是说我们在任何时候只使用与我们执行任务时所必须多的内存一样多的内存。</p>
 <p>Mat本质上是由两个数据部分组成的类： （包含信息有矩阵的大小，用于存储的方法，矩阵存储的地址等） 的矩阵头和一个指针，指向包含了像素值的矩阵（可根据选择用于存储的方法采用任何维度存储数据）。矩阵头部的大小是恒定的。然而，矩阵本身的大小因图像的不同而不同，通常是较大的数量级。因此，当你在您的程序中传递图像并在有些时候创建图像副本您需要花费很大的代价生成图像矩阵本身，而不是图像的头部。OpenCV 是图像处理库，它包含大量的图像处理函数。若要解决的计算挑战，最终大部分时间你会使用库中的多个函数。由于这一原因图像传给库中的函数是一种常见的做法。我们不应忘记我们正在谈论往往是计算量相当大的图像处理算法。我们想要做的最后一件事是通过制作不必要的可能很大的图像的拷贝进一步降低您的程序的速度。</p>
 <p>为了解决这一问题 OpenCV 使用引用计数系统。其思想是Mat的每个对象具有其自己的头，但可能他们通过让他们矩阵指针指向同一地址的两个实例之间共享该矩阵。此外，拷贝运算符将只能复制矩阵头部，也还将复制指向矩阵的指针，但不复制矩阵本身。</p>
-<p>Mat A, C; //仅创建了头部<br>A = imread(argv[1], CV_LOAD_IMAGE_COLOR); //在此我们知道使用的方法（分配矩阵）<br>Mat B(A); //使用拷贝构造函数<br>C = A; //赋值运算符</p>
+<p>Mat A, C; //仅创建了头部<br>A = imread(argv<a href="http://hi.csdn.net/attachment/201203/4/0_1330856598Rylz.gif" target="_blank" rel="noopener">1</a>, CV_LOAD_IMAGE_COLOR); //在此我们知道使用的方法（分配矩阵）<br>Mat B(A); //使用拷贝构造函数<br>C = A; //赋值运算符</p>
 <p>上文中的所有对象，使用同一个数据矩阵。他们的头不同，但是其中任何一个对矩阵进行修改，都会将影响所有其他的矩阵。在实践中的不同对象只是提供相同的底层数据不同的访问方法，然而，它们的头部是不同的。真正有趣的部分是您可以创建仅指向完整数据的一小部分的头。例如，要在图像中创建兴趣区域 ( ROI) 只需创建一个新头设置新边界：</p>
 <p>Mat D (A, Rect(10, 10, 100, 100) );</p>
 <p>Mat E = A(Range:all(), Range(1,3));</p>
@@ -222,10 +209,10 @@
 <p>1、RGB 是最常见的是我们的眼睛使用类似的事情，我们显示系统还撰写使用这些颜色。</p>
 <p>· 单纯疱疹和合肥分解颜色到他们的色相、 饱和度和亮度值/组件，这是我们来描述颜色更自然的方式。您使用，例如可驳回的最后一个组件，使你不那么明智的输入图像的光照条件的算法。</p>
 <p>2、 YCrCb 使用流行的 JPEG 图像格式。</p>
-<p>3、 CIE L <em>b</em>a 是均匀颜色空间，它是非常方便的如果您需要测量给定的颜色，以另一种颜色的距离。</p>
+<p>3、 CIE L ba 是均匀颜色空间，它是非常方便的如果您需要测量给定的颜色，以另一种颜色的距离。</p>
 <p>现在，每个建筑构件都自己有效的域。这会导致使用的数据类型。我们如何存储组件的定义只是如何精细的控制，我们已于其域。最小的数据类型可能是 char 类型，这意味着一个字节或 8 位。这可能是有符号（值-127 到 + 127）或无符号（以便可以存储从 0 到 255 之间的值）。虽然这三个组件的情况下已经给 16 万可能的颜色来表示 （如 RGB 的情况下） 我们可能通过使用浮点数 （4 字节 = 32 位） 或double（8 字节 = 64 位） 数据类型的每个组件获得甚至更精细的控制。然而，请记住增加组件的大小也会增加在内存中的整张图片的大小。</p>
 <p>显式创建Mat对象</p>
-<p>在Load, Modify and Save an Image 教程中，你已经可以看到如何使用readWriteImageVideo： ‘imwrite() <imwrite>‘ 函数将一个矩阵写到一个图像文件中。然而，出于调试目的显示的实际值就方便得多。您可以实现此通过Mat的 &lt;&lt;运算符。不过，请注意这仅适用于二维矩阵。</imwrite></p>
+<p>在Load, Modify and Save an Image 教程中，你已经可以看到如何使用readWriteImageVideo： ‘imwrite() ‘ 函数将一个矩阵写到一个图像文件中。然而，出于调试目的显示的实际值就方便得多。您可以实现此通过Mat的 &lt;&lt;运算符。不过，请注意这仅适用于二维矩阵。</p>
 <p>虽然Mat是一个伟大的图像容器类，它也是一般矩阵类。因此，利用Mat创建和操作多维矩阵是可能的。您可以通过多种方式创建Mat的对象：</p>
 <p>1、 Mat()构造函数</p>
 <p>Mat M(2,2, CV_8UC3, Scalar(0,0,255));</p>
@@ -246,11 +233,11 @@
 <p>M.create(4,4, CV_8UC(2));</p>
 <p>cout &lt;&lt; “M = “&lt;&lt; endl &lt;&lt; “ “ &lt;&lt; M &lt;&lt; endl &lt;&lt; endl;</p>
 <p>你不能通过这个构造来初始化矩阵中的数值。它只会在新的矩阵尺寸与旧的矩阵尺寸不合时重新分配矩阵的数据空间。</p>
-<p> MATLAB风格的初始化函数：zeros()， ones()，</p>
+<p>MATLAB风格的初始化函数：zeros()， ones()，</p>
 <p>：eyes().指定使用的尺寸和数据类型</p>
 <p>Mat E = Mat::eye(4, 4, CV_64F)；<br>cout &lt;&lt; “E = “ &lt;&lt; endl &lt;&lt; “ “ &lt;&lt; E &lt;&lt; endl &lt;&lt; endl;<br>Mat O = Mat::ones(2, 2, CV_32F);<br>cout &lt;&lt; “O = “ &lt;&lt; endl &lt;&lt; “ “ &lt;&lt; O &lt;&lt; endl &lt;&lt; endl;<br>Mat Z = Mat::zeros(3,3, CV_8UC1);<br>cout &lt;&lt; “Z = “ &lt;&lt; endl &lt;&lt; “ “ &lt;&lt; Z &lt;&lt; endl &lt;&lt; endl;</p>
 <p>对于小的矩阵来说你可以使用逗号隔开的初始化函数：</p>
-<p>Mat C = (Mat_<double>(3,3) &lt;&lt; 0, -1, 0, -1, 5, -1, 0, -1, 0);</double></p>
+<p>Mat C = (Mat_(3,3) &lt;&lt; 0, -1, 0, -1, 5, -1, 0, -1, 0);</p>
 <p>cout &lt;&lt; “C = “ &lt;&lt; endl &lt;&lt; “ “ &lt;&lt; C &lt;&lt; endl &lt;&lt; endl;</p>
 <p>为一个已有的Mat对象创建一个新的头然后clone()或者copyTo()这个头.</p>
 <p>Mat RowClone = C.row(1).clone();</p>
@@ -288,12 +275,12 @@
 <p>cout &lt;&lt; “Point (3D) = “ &lt;&lt; P3f &lt;&lt; endl &lt;&lt; endl;</p>
 <p>OpenCV参考手册之Mat类详解</p>
 <p>std::vector通过 cv::Mat</p>
-<p>vector<float> v;</float></p>
+<p>vector v;</p>
 <p>v.push_back( (float)CV_PI); v.push_back(2); v.push_back(3.01f);</p>
 <p>cout &lt;&lt; “Vector of floats via Mat = “ &lt;&lt; Mat(v) &lt;&lt; endl &lt;&lt; endl;</p>
 <p>OpenCV参考手册之Mat类详解</p>
 <p>点的std::vector</p>
-<p>vector<point2f> vPoints(20);</point2f></p>
+<p>vector vPoints(20);</p>
 <p>for (size_t E = 0; E &lt; vPoints.size(); ++E)</p>
 <p>vPoints[E] = Point2f((float)(E*5), (float)(E % 7));</p>
 <p>cout &lt;&lt; “A vector of 2D Points = “ &lt;&lt; vPoints &lt;&lt; endl &lt;&lt; endl;</p>
@@ -395,7 +382,7 @@
 <p>rtype – 要求是目标矩阵的类型，或者在当前通道数与源矩阵通道数相同的情况下的depth。如果rtype 为负，目标矩阵与源矩阵类型相同。</p>
 <p>beta – 可选的delta加到缩放值中去。</p>
 <p>该方法将源像素值转化为目标类型saturate_cast&lt;&gt; 要放在最后以避免溢出</p>
-<p>m( x;y) = saturate_cast &lt; rType &gt; ( α<em>( </em>this)( x;y) +β)</p>
+<p>m( x;y) = saturate_cast &lt; rType &gt; ( α( this)( x;y) +β)</p>
 <p>Mat::assignTo</p>
 <p>提供了一个convertTo的功能形式。</p>
 <p>C++: void Mat::assignTo(Mat&amp; m, int type=-1 ) const</p>
@@ -416,10 +403,10 @@
 <p>cn – 新的通道数。若cn=0，那么通道数就保持不变。</p>
 <p>rows –新的行数。 若rows = 0, 那么行数保持不变。</p>
 <p>该方法为*this元素创建新的矩阵头。这新的矩阵头尺寸和通道数或其中之一发生改变，在以下的情况任意组合都是有可能的：</p>
-<p>ü 新的矩阵没有新增或减少元素。通常，rows<em>cols</em>channels()在转换过程中保持一致。.</p>
+<p>ü 新的矩阵没有新增或减少元素。通常，rowscolschannels()在转换过程中保持一致。.</p>
 <p>ü 无数据的复制。也就是说，这是一个复杂度为 O(1)的操作。通常，如果该操作改变行数或透过其他方式改变元素行索引，那么矩阵必定是连续的。参见Mat::isContinuous()。</p>
 <p>例如，有一存储了STL向量的三维点集，你想用3xN的矩阵来完成下面的操作：</p>
-<p>std::vector<point3f> vec;</point3f></p>
+<p>std::vector vec;</p>
 <p>…</p>
 <p>Mat pointMat = Mat(vec). //把向量转化成Mat, 复杂度为O(1)的运算</p>
 <p>reshape(1). // 从Nx1的3通道矩阵得出Nx3 的单通道矩阵</p>
@@ -431,7 +418,7 @@
 <p>C++: MatExpr Mat::t() const</p>
 <p>该方法通过矩阵表达式（matrix expression）实现矩阵的转置The method performs matrix transposition by means of matrix expressions. 它并未真正完成了转置但却返回一个临时的可以进一步用在更复杂的矩阵表达式中或赋给一个矩阵的转置矩阵对象：</p>
 <p>Mat A1 = A + Mat::eye(A.size(), A.type)*lambda;</p>
-<p>Mat C = A1.t()<em>A1; //计算(A + lambda</em>I)^t <em> (A + lamda</em>I).</p>
+<p>Mat C = A1.t()A1; //计算(A + lambdaI)^t (A + lamdaI).</p>
 <p>Mat::inv</p>
 <p>反转矩阵</p>
 <p>C++: MatExpr Mat::inv(int method=DECOMP_LU) const</p>
@@ -503,29 +490,7 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">OpenCV</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/图像处理//" class="article-tag-list-link color5">图像处理</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -685,10 +650,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">电路设计</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
             
             <div class="clearfix"></div>
